@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: me7eorite
+Build-Jdk: 1.8.0_292
+Implementation-Title: bbs
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.me7eorite
+Main-Class: ${start-class}
+
