@@ -14,8 +14,10 @@ public class ProtalSessionHandlerInterceptor extends HandlerInterceptorAdapter {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html;charset=utf-8");
-        String url = getRequestUrl(request);
-        System.out.println("url: "+url);
+        String url = request.getRequestURI();
+        String url2=  request.getServletPath();
+        System.out.println("url2: "+url2);
+        System.out.println("url1: "+url);
         if (url.startsWith("/adminLogin/")){
             return true;
         }
